@@ -1,0 +1,26 @@
+{
+  "name": "curso-de-typescript",
+  "version": "1.0.0",
+  "description": "Proyectu Inicial de typeScript TS",
+  "main": "index.js",
+  "scripts": {
+    "tsNode": "cd src && ts-node index.ts",
+    "start": "nodemon",
+    "transpilation": "tsc",
+    "build:prod": "rimraf ./build && tsc",
+    "start:prod": "npm run build:prod && node build/index.js"
+  },
+  "keywords": [
+    "typescript",
+    "ts"
+  ],
+  "author": "@jrengifo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "nodemon": "^3.1.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
